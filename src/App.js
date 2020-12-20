@@ -1,9 +1,20 @@
+import React from "react";
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+import PokemonContainer from "./containers/PokemonContainer";
+
+const client = new ApolloClient({
+	uri: "https://graphql-pokemon2.vercel.app/",
+	cache: new InMemoryCache(),
+});
+
 function App() {
-  return (
-    <div className="App">
-     <p>hello</p>
-    </div>
-  );
+	return (
+		<ApolloProvider client={client}>
+			<main>
+				<PokemonContainer />
+			</main>
+		</ApolloProvider>
+	);
 }
 
 export default App;
