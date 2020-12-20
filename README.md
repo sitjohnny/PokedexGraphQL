@@ -1,7 +1,7 @@
 # Pokedex GraphQL
 
 <p align="center" width="100%">
-    <img width="50%" src="https://raw.githubusercontent.com/lucasbento/graphql-pokemon/master/content/logo.png">
+    <img width="50%" src="./public/readmelogo.png">
 </p>
 
 This is a simple page that allows users to view information about pokemons. It features a pokemon's name, stats, their image, and their special attack moves.
