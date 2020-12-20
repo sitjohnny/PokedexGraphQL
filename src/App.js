@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import PokemonContainer from "./containers/PokemonContainer";
 
