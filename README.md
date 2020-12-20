@@ -20,7 +20,7 @@ npm i
 npm start
 ```
 
-#### Executing the program using Docker
+### Executing the program using Docker
 
 1. Build the project using this command: `docker build -t pokedexgraphql .`
 2. Run the project with this command: `docker run -p 3000:3000 -d pokedexgraphql`
