@@ -1,5 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const client = new ApolloClient({
+	uri: "https://graphql-pokemon2.vercel.app/",
+	cache: new InMemoryCache(),
+});
+
+ReactDOM.render(
+	<ApolloProvider client={client}>
+		<App />
+	</ApolloProvider>,
+	document.getElementById("root")
+);
